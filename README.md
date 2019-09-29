@@ -17,8 +17,7 @@ There are not many prerequisites required to run this project, but you'll need t
 First clone this repository and move to `spotify-wrapper` folder.
 
 ```
-git clone https://github.com/enriquebeta6/spotify-wrapper.git
-cd spotify-wrapper
+git clone https://github.com/enriquebeta6/spotify-wrapper.git && cd spotify-wrapper
 ```
 
 And install the project dependencies:

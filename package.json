@@ -43,7 +43,12 @@
     "spotify API"
   ],
   "author": "Enrique Mora",
-  "license": "ISC",
+  "license": "MIT",
+  "homepage": "https://github.com/enriquebeta6/spotify-wrapper#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/enriquebeta6/spotify-wrapper.git"
+  },
   "devDependencies": {
     "@babel/cli": "^7.6.0",
     "@babel/core": "^7.6.0",

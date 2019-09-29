@@ -1,0 +1,63 @@
+{
+  "name": "spotify-wrapper",
+  "version": "1.0.0",
+  "description": "A wrapper to work with the Spotify Web API",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src/js/**/*.js",
+    "test": "mocha src/tests/**/*.test.js --require @babel/register",
+    "test:watch": "npm run test -- --watch",
+    "test:coverage": "nyc npm test"
+  },
+  "nyc": {
+    "check-coverage": true,
+    "statements": 80,
+    "branches": 80,
+    "functions": 80,
+    "lines": 80,
+    "reporter": [
+      "text",
+      "html"
+    ],
+    "exclude": [
+      "src/tests/**/*.test.js"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run lint && npm run test:coverage"
+    }
+  },
+  "keywords": [
+    "javascript",
+    "TDD",
+    "mocha",
+    "chaijs",
+    "testing",
+    "ES6",
+    "babel",
+    "nyc",
+    "test coverage",
+    "eslint",
+    "husky",
+    "spotify API"
+  ],
+  "author": "Enrique Mora",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/register": "^7.6.0",
+    "chai": "^4.2.0",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "husky": "^3.0.7",
+    "mocha": "^6.2.0",
+    "nyc": "^14.1.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.6.0"
+  }
+}

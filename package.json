@@ -63,6 +63,9 @@
     "nyc": "^14.1.1"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.6.0"
+    "@babel/polyfill": "^7.6.0",
+    "core-js": "^3.2.1",
+    "core-js-bundle": "^3.2.1",
+    "core-js-pure": "^3.2.1"
   }
 }
